@@ -1,4 +1,5 @@
 import { Product } from "./Product";
+import { calculateTax } from "../utils/taxCalculator";
 
 export class PhysicalProduct extends Product {
     private weight: number;
@@ -9,8 +10,7 @@ export class PhysicalProduct extends Product {
     }
 
     getPriceWithTax(): number {
-        const taxRate = 0.1;
-        return this.price + (this.price * taxRate);
+        return calculateTax(this);
     }
 
 

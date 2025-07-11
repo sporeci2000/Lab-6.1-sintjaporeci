@@ -14,10 +14,10 @@ const digitalProducts: DigitalProduct[] = [
 
 physicalProducts.forEach(p => {
   console.log(p.displayDetails());
-  console.log(`Final Price with tax is: $${p.getPriceWithTax().toFixed(2)}\n`);
+  console.log(`Total cost with tax is: $${p.getPriceWithTax().toFixed(2)}\n`);
 });
 
 digitalProducts.forEach(p => {
   console.log(p.displayDetails());
-  console.log(`Final Price is: $${p.getPriceWithTax().toFixed(2)}\n`);
+  console.log(`Total cost is: $${p.getPriceWithTax().toFixed(2)}\n`);
 });
